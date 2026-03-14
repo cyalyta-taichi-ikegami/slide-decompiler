@@ -1,0 +1,36 @@
+# 環境変数・シークレット（絶対にコミットしない）
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+service_account*.json
+gcloud_credentials*.json
+application_default_credentials.json
+
+# Google Cloud ADC キャッシュ
+.config/gcloud/
+
+# 入出力ファイル（PPTX・画像）
+*.pptx
+*.ppt
+*.png
+*.jpg
+*.jpeg
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp

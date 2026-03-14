@@ -1,0 +1,18 @@
+# Google Cloud / Vertex AI
+google-cloud-aiplatform>=1.50.0
+vertexai>=1.50.0
+
+# スライド生成
+python-pptx>=0.6.23
+
+# 画像処理
+Pillow>=10.0.0
+
+# データモデル・バリデーション（Gemini 構造化出力のスキーマ定義に使用）
+pydantic>=2.0.0
+
+# API リトライ（指数的バックオフ）
+tenacity>=8.2.0
+
+# Google Cloud Storage（GCS 経由で大ファイルを受け渡す場合に使用）
+google-cloud-storage>=2.14.0
