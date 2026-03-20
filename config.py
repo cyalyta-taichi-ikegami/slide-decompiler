@@ -8,7 +8,7 @@ GCP_LOCATION: str = os.environ.get("GCP_LOCATION", "us-central1")
 GCS_BUCKET: str = os.environ.get("GCS_BUCKET", "")
 
 # --- AI モデル ---
-GEMINI_MODEL: str = os.environ.get("GEMINI_MODEL", "gemini-3.1-pro-preview")
+GEMINI_MODEL: str = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
 # Imagen 3 inpainting 用モデル
 IMAGEN_MODEL: str = os.environ.get("IMAGEN_MODEL", "imagen-3.0-capability-001")
 

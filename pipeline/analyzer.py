@@ -24,6 +24,7 @@ from config import (
     RETRY_MAX_WAIT_SEC,
 )
 from models.slide_elements import SlideAnalysis
+from utils.schema_utils import flatten_schema
 
 logger = logging.getLogger(__name__)
 
@@ -64,7 +65,7 @@ def analyze_slide(image_bytes: bytes) -> SlideAnalysis:
         GEMINI_MODEL,
         generation_config=GenerationConfig(
             response_mime_type="application/json",
-            response_schema=SlideAnalysis.model_json_schema(),
+            response_schema=flatten_schema(SlideAnalysis.model_json_schema()),
         ),
     )
 
